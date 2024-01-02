@@ -277,13 +277,13 @@ body {
     text-transform: uppercase;
     font-style: normal;
     margin: 0;
-  @media (max-width: 768px) {
+/*   @media (max-width: 768px) {
         font-size: 2em;
 }
         @media (max-width: 460px) {
         font-size: 1em;
           margin-bottom:10px;
-}
+} */
 }
 
 
@@ -296,17 +296,17 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-          @media (max-width: 460px) {
+/*           @media (max-width: 460px) {
         font-size: 1em;
           margin-bottom:10px;
             padding: 5px 10px;
-}
+} */
 }
 
 @media (max-width: 768px) {
-    .hero button {
+/*     .hero button {
         font-size: 1em;
-    }
+    } */
 }
 
 /*============ END HERO SECTION ============*/
