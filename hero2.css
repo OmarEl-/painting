@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@100&family=Titillium+Web:wght@200;400;700;900&display=swap');
+
+:root {
+  --kant: 'Kanit', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+  --titillium :'Titillium Web', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+} 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--kant);
+}
+/*============ START NAVBAR ============*/
+
+
+.navbar {
+    background: linear-gradient(to bottom, #399ff8, #398ee1);
+    color: #fff;
+    padding: 15px 0;
+  
+}
+
+.nav-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+  position:relative;
+  z-index:999;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-size: 1em;
+    
+}
+.nav-links a:hover {
+  background-color: #3498db3d;;
+  text-decoration: underline;
+  color: #ffffff87;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  
+    
+}
+
+.dropbtn {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+   
+ 
+}
+.dropbtn:hover {
+  color: #ffffff87;
+  text-decoration: underline;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 450px;
+    right: -102px;
+    top: 44px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  
+} */
+.dropdown-content {
+  display: none;
+  position: fixed; /* Use fixed position to cover the entire screen */
+  top: 72px;
+  left: 0;
+  width: 100%; /* Set width to 100% */
+  max-height: 100vh; /* Set height to 100% of the viewport height */
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  
+  
+    
+}
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 1em;
+    
+}
+
+/* .dropdown:hover .dropdown-content {
+    display: block;
+} */
+.dropdown.active .dropdown-content {
+  display: block;
+  
+  
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+@media (max-width: 992px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to bottom, #eee, #eee);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        border-bottom:1px solid #399ff8;
+        color:#222;
+      
+    }
+  .nav-links a:hover{
+    background:#ddd
+  }
+  .dropbtn{
+    /* margin:  15px auto; */
+     color:#222
+    
+  }
+  .dropdown:hover{
+    background:#ddd
+  }
+    .dropdown-content {
+        position: static;
+        display: none;
+        width: 100%;
+        background:#ddd
+     
+    }
+  .dropdown{
+    border-bottom:1px solid #399ff8
+  }
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    
+  .dropdown-content a{
+    text-indent: 50px;
+    border:0;
+    border-top:1px solid #eee;
+    
+  }
+  .dropdown-content a:hover{
+    
+    background: #eee
+  }
+   .dropdown-content a:first-child{
+    
+    border-top:1px solid #399ff8
+  }
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+
+/*============ END NAVBAR ============*/
+
+/*============ START HERO SECTION  ============*/
+.hero{
+          position:relative; 
+            background:#333 url(https://i.postimg.cc/DzgvRQjr/dmin.jpg) no-repeat; 
+           background-size:cover;
+            top:0px; 
+            width:100%;
+            height:100vh;
+           overflow:hidden;
+           
+
+    @media (max-width: 1400px) {
+        height:100%;
+}
+        }
+.hero-content{
+           
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white; 
+      text-align: center;
+      padding-top:200px;
+      padding-bottom:100px;
+  @media (max-width: 768px) {
+      padding-top:100px;
+}
+    @media (max-width: 460px) {
+      padding-top:40px;
+}
+}
+
+.u-text-h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-family: "Archivo Black";
+    font-weight: 700;
+    margin: 0;
+  @media (max-width: 768px) {
+        font-size: 3em;
+}
+      @media (max-width: 460px) {
+        font-size: 1.3em;
+         margin-bottom:10px;
+}
+}
+
+
+
+.u-text-h4 {
+    font-size: 3.75rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 0;
+  @media (max-width: 768px) {
+        font-size: 2em;
+}
+        @media (max-width: 460px) {
+        font-size: 1em;
+          margin-bottom:10px;
+}
+}
+
+
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+          @media (max-width: 460px) {
+        font-size: 1em;
+          margin-bottom:10px;
+            padding: 5px 10px;
+}
+}
+
+@media (max-width: 768px) {
+    .hero button {
+        font-size: 1em;
+    }
+}
+
+/*============ END HERO SECTION ============*/
+.container{
+  max-width:1140px;
+/*   max-width:80%; */
+  margin:auto;
+}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+/*   grid-template-rows:  1fr; */
+  grid-gaps:20px;
+  padding:20px;
+    @media screen and (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+.card{
+  
+  padding: 20px;
+  margin:10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.card h1,.card p{
+  margin:40px auto 20px ;
+}
+.card button{
+  padding:10px;
+  margin:40px auto 20px ;
+  border: 1px solid #399ff8;
+  border-radius: 50px;
+  font-family: var(--titillium);
+  color:#399ff8;
+  background-color:transparent
+}

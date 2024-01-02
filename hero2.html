@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive hero section</title>
+    <link rel="stylesheet" href="hero2.css">
+</head>
+<body>
+   <!-- ========== START NAVBAR ======--->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Your Logo</div>
+        <div class="nav-links" id="navLinks">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <div class="dropdown"   id="servicesDropdown" onclick="toggleDropdown('servicesDropdown')">
+                <div class="dropbtn">Services</div>
+                <div class="dropdown-content" id="services">
+                    <a href="#">Service 1</a>
+                    <a href="#">Service 2</a>
+                    <a href="#">Service 3</a>
+                    <a href="#">Service 4</a>
+                    <a href="#">Service 5</a>
+                    <a href="#">Service 6</a>
+                </div>
+            </div>
+            <a href="#">Contact</a>
+
+            <div class="dropdown" id="languagesDropdown" onclick="toggleDropdown('languagesDropdown')">
+                <div class="dropbtn">Lan</div>
+                <div class="dropdown-content" id="languages" >
+                <a href="#">EN</a>
+                <a href="#">NL</a>
+                <a href="#">FR</a>
+                </div>
+            </div>
+        </div><!--- END navLinks -->
+        <div class="hamburger" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+   
+</nav>
+
+<!--- ========= END NAVBAR ======--->
+<section class="hero">
+
+<div class="hero-content">
+
+<h4 class="u-text-h4">Huis Onderhoud</h4>
+<h1 class="u-text-h1">services</h1>
+<button>Get Started</button>
+</div>
+</section>
+<section class="container">
+<div class="cards">
+<div class="card">
+<h1>Payroll</h1>
+<p>We take care of your payroll administration and risks</p>
+<button>MORE INFO</button>
+</div>
+<div class="card">
+<h1>HR Management
+</h1>
+<p>Sparring partners and relief from legal responsibility</p>
+<button>MORE INFO</button>
+</div>
+<div class="card">
+<h1>Recruitment</h1>
+<p>Recruitment service for the hospitality industry</p>
+<button>MORE INFO</button>
+</div>
+<div class="card">
+<h1>Secondment</h1>
+<p>Maintain flexibility by hiring temporary staff
+
+</p>
+<button>MORE INFO</button>
+</div>
+</div>
+</section> 
+
+<script>
+
+     function toggleNav() {
+            var navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("show");
+        }
+
+        var activeDropdown = null;
+
+function toggleDropdown(dropdownId) {
+    var dropdown = document.getElementById(dropdownId);
+
+    // Close the active dropdown if there is one
+    if (activeDropdown && activeDropdown !== dropdown) {
+        activeDropdown.classList.remove('active');
+    }
+
+    // Toggle the clicked dropdown
+    dropdown.classList.toggle('active');
+
+    // Update the active dropdown
+    activeDropdown = dropdown;
+}
+
+window.onscroll = function () {
+    // Close the active dropdown on scroll
+    if (activeDropdown) {
+        activeDropdown.classList.remove('active');
+        activeDropdown = null;
+    }
+};
+
+
+</script>
+</body>
+</html>
