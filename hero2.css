@@ -237,8 +237,8 @@ body {
     @media (max-width: 768px) {
       padding-top:100px;
       background-size:cover;
-       background-position: 50% 50%;
-      height:100vh;
+       background-position: 50% 30%;
+      height:80vh;
       width:100%;
 }
         }
