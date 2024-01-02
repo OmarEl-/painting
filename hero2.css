@@ -117,7 +117,10 @@ body {
     font-size: 1em;
     
 }
-
+.dropdown-content a:hover {
+  text-decoration: none;
+  color: #333;
+}
 /* .dropdown:hover .dropdown-content {
     display: block;
 } */
@@ -160,10 +163,12 @@ body {
         padding: 15px;
         border-bottom:1px solid #399ff8;
         color:#222;
+        
       
     }
   .nav-links a:hover{
-    background:#ddd
+    background:#ddd;
+    text-decoration: none;
   }
   .dropbtn{
     /* margin:  15px auto; */
@@ -220,16 +225,18 @@ body {
            background-size:cover;
             top:0px; 
             width:100%;
-            height:100vh;
+            height:80vh;
            overflow:hidden;
-           
 
     @media (max-width: 1400px) {
         height:100%;
 }
+@media (min-width: 3000px) {
+  height:100vh;
+}
         }
-.hero-content{
-           
+
+.hero-content{ 
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -328,6 +335,9 @@ body {
   border: 1px solid #ccc;
   border-radius: 8px;
 }
+.card h1{
+  color:#3498db;
+}
 .card h1,.card p{
   margin:40px auto 20px ;
 }
@@ -340,3 +350,49 @@ body {
   color:#399ff8;
   background-color:transparent
 }
+
+/*=========  START BOX ==========*/
+section.box{
+  width: 80%;
+  margin:auto;
+  @media screen and (max-width: 992px) {
+   
+    width:100%;
+  } 
+}
+section.box .cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(500px , 1fr));
+/*   grid-template-rows:  1fr; */
+  grid-gaps:20px;
+  padding:20px;
+  width: 100%;
+  margin:auto;
+  @media screen and (max-width: 1625px) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  /* @media screen and (max-width: 992px) {
+    grid-template-columns:  1fr; 
+    width:100%;
+  } */
+  /* @media screen and (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr); 
+    width:100%;
+  } */
+}
+section.box .cards .card{
+  
+  padding: 20px;
+  margin:10px;
+  /* border: none; */
+  
+  /* @media screen and (max-width: 992px) {
+    
+    width:500px;
+  } */
+
+}
+section.box .cards .card img{
+    width:100%;
+}
+/*=========  END BOX ==========*/
