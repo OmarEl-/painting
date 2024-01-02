@@ -237,7 +237,7 @@ body {
     @media (max-width: 768px) {
       padding-top:100px;
       background-size:cover;
-      background-position: 100%;
+      background-position: 90%;
       height:80vh;
       width:100%;
 }
@@ -268,7 +268,7 @@ body {
     font-weight: 700;
     margin: 0;
    @media (max-width: 768px) {
-        font-size: 3em;
+        font-size: 2em;
 }
 /* @media (max-width: 460px) {
         font-size: 1.3em;
@@ -286,7 +286,7 @@ body {
     font-style: normal;
     margin: 0;
   @media (max-width: 768px) {
-        font-size: 2em;
+        font-size: 1.3em;
 }
 /* @media (max-width: 460px) {
         font-size: 1em;
