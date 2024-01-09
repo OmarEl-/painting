@@ -66,6 +66,10 @@ body {
     
 }
 
+
+.material-symbols-outlined {
+margin-top:5px;
+}
 .dropbtn {
     color: #fff;
     background-color: transparent;
@@ -73,6 +77,8 @@ body {
     padding: 10px 15px;
     font-size: 1em;
     cursor: pointer;
+    display:flex;
+    align-items:center;
    
  
 }
