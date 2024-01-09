@@ -95,9 +95,7 @@ body {
     border-bottom-right-radius: 8px;
   
 } */
-.html-down-icon{
-transform:rotate(90deg);
-}
+
 .dropdown-content {
   display: none;
   position: fixed; /* Use fixed position to cover the entire screen */
