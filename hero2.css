@@ -55,8 +55,7 @@ body {
     
 }
 .nav-links a:hover {
-  background-color: #3498db3d;;
-  text-decoration: underline;
+  background-color: #3498db3d;
   color: #ffffff87;
 }
 .dropdown {
@@ -84,7 +83,6 @@ margin-top:5px;
 }
 .dropbtn:hover {
   color: #ffffff87;
-  text-decoration: underline;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
