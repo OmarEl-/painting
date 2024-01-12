@@ -261,9 +261,9 @@ margin-top:5px;
       padding-top:30px;
 }
  
-    @media (max-width: 460px) {
+/*     @media (max-width: 460px) {
       padding-top:40px;
-} 
+}  */
 }
 
 .u-text-h1 {
@@ -272,9 +272,10 @@ margin-top:5px;
     font-family: "Archivo Black";
     font-weight: 700;
     margin: 0;
-/*    @media (max-width: 768px) {
-        font-size: 2em;
-} */
+    @media (max-width: 992px) {
+        font-size: 3em;
+      
+} 
 /* @media (max-width: 460px) {
         font-size: 1.3em;
          margin-bottom:10px;
